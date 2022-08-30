@@ -10,7 +10,7 @@ path = "/Users/ethancastano/Desktop/c/FIU_MENU_BOT/botanke_keys.json"
 gc = pygsheets.authorize(service_account_file=path)
 
 
-List = [
+ticket = [
     "ticket_number",
     "date_time",
     "discord_name”,”status”,”phone_number",
@@ -27,7 +27,6 @@ List = [
     "bank_account_number",
     "bank_routing",
 ]
-print(List[0])
 
 
 def test_function():
@@ -35,21 +34,21 @@ def test_function():
     wks = sh.sheet1
     wks.append_table(
         values=[
-            (List[0]),
-            (List[1]),
-            (List[2]),
-            (List[3]),
-            (List[4]),
-            (List[5]),
-            (List[6]),
-            (List[7]),
-            (List[8]),
-            (List[9]),
-            (List[10]),
-            (List[11]),
-            (List[12]),
-            (List[13]),
-            (List[14]),
+            (ticket[0]),
+            (ticket[1]),
+            (ticket[2]),
+            (ticket[3]),
+            (ticket[4]),
+            (ticket[5]),
+            (ticket[6]),
+            (ticket[7]),
+            (ticket[8]),
+            (ticket[9]),
+            (ticket[10]),
+            (ticket[11]),
+            (ticket[12]),
+            (ticket[13]),
+            (ticket[14]),
         ]
     )
 
